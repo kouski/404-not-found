@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1,
-  maximum-scale=5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="icon" href="devchallenges.png" />
 
@@ -16,65 +18,50 @@
 
   <style>
     body {
-      font-family: "Poppins", sans-serif;
+      margin: 0px;
+      box-sizing: border-box;
     }
 
-    .responsive {
-
+    img {
       width: 100%;
-      max-width: 600px;
       height: auto;
+      min-width: 100%;
     }
-
     .container {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      justify-content: space-around;
-
+      margin-top: 80px;
+      width: 90%;
+      
     }
 
     h1 {
-      font-size: 60px;
-      font-family: "Poppins", sans-serif;
-    }
-
-    div {
-
-      margin-left: 180px;
+      font-size: 70px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
     }
 
     p {
       font-size: 30px;
-      font-family: 'Courier New', Courier, monospace
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 30px;
     }
-
-    span {
-      background-color: black;
-      color: white;
-      padding: 20px;
-
-    }
+    
   </style>
 </head>
 
 <body>
+  
   <div class="container">
-    <img src="Scarecrow.png" class="responsive">
-    <div>
-      <h1>
-        I have bad news for you
-
-      </h1>
-      <p>The page you are looking <br> for might be removed or is <br> temporarily unavailable</p>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <span>BACK TO THE HOMEPAGE</span>
+    
+    <div class="row ">
+      <div class="col-sm-6">
+        <img src="Scarecrow.png" alt="scarecrow ">
+      </div>
+      <div class="col-sm-6">
+        <h1>I have bad news for you</h1>
+        <p>The page you are looking<br> for might be removed or is<br> temporarily unavailable</p>
+        
+      </div>
+      
     </div>
-
   </div>
   <footer>Oscar Rodriguez.2021</footer>
 </body>
